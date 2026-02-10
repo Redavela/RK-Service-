@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez RK-Service pour votre projet web. Demandez un devis gratuit et recevez une proposition personnalis&#233;e sous 24h.">
+  <title>Contact & Devis | RK-Service</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact & Devis | RK-Service">
+  <meta property="og:description" content="Demandez un devis gratuit et recevez une proposition personnalis&#233;e sous 24h. Sans engagement.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">RK<span>-Service</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Exemples</a></li>
+        <li><a href="about.html">&#192; propos</a></li>
+        <li><a href="contact.html" class="nav-cta active">Devis gratuit</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Contact -->
+  <section class="hero" style="min-height: 60vh;">
+    <div class="container" style="display:block; text-align:center;">
+      <div class="hero-content" style="max-width:700px; margin:0 auto;">
+        <div class="hero-badge">&#9993; Parlons de votre projet</div>
+        <h1>Demandez votre <span class="highlight">devis gratuit</span></h1>
+        <p style="margin:0 auto 36px;">Remplissez le formulaire ci-dessous et recevez une proposition personnalisée sous 24h. Sans engagement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="contact-wrapper">
+
+        <!-- Infos -->
+        <div class="contact-info fade-up">
+          <h3>Informations de contact</h3>
+          <p>N'hésitez pas à me contacter par le canal de votre choix. Je réponds généralement sous 24h.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-item-icon">&#9993;</div>
+              <div class="contact-item-text">
+                <strong>Email</strong>
+                <span>contact@rk-service.fr</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">&#128222;</div>
+              <div class="contact-item-text">
+                <strong>Téléphone</strong>
+                <span>+33 6 00 00 00 00</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">&#128205;</div>
+              <div class="contact-item-text">
+                <strong>Localisation</strong>
+                <span>Paris, France</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">&#128337;</div>
+              <div class="contact-item-text">
+                <strong>Disponibilité</strong>
+                <span>Lun - Ven, 9h - 18h</span>
+              </div>
+            </div>
+          </div>
+          <h4 style="margin-bottom:12px; font-size:0.95rem;">Suivez-moi</h4>
+          <div class="contact-socials">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="GitHub">GH</a>
+            <a href="#" aria-label="Instagram">IG</a>
+          </div>
+        </div>
+
+        <!-- Formulaire multi-étapes -->
+        <div class="form-card fade-up">
+          <div class="form-steps-indicator">
+            <div class="step-indicator active" data-step="1">
+              <div class="step-number">1</div>
+              <span class="step-label">Votre projet</span>
+            </div>
+            <div class="step-indicator" data-step="2">
+              <div class="step-number">2</div>
+              <span class="step-label">Détails</span>
+            </div>
+            <div class="step-indicator" data-step="3">
+              <div class="step-number">3</div>
+              <span class="step-label">Vos infos</span>
+            </div>
+          </div>
+
+          <form id="devisForm">
+            <!-- REMPLACEZ par votre clé Web3Forms (gratuit sur web3forms.com) -->
+            <input type="hidden" name="access_key" value="0721dd9f-ea5b-430c-8d1f-26a35e9cbf8d">
+            <input type="hidden" name="subject" value="Nouvelle demande de devis - RK-Service">
+            <input type="hidden" name="from_name" value="RK-Service">
+            <input type="checkbox" name="botcheck" style="display:none;">
+
+            <!-- Étape 1 : Type de projet -->
+            <div class="form-step active" data-step="1">
+              <h3 style="margin-bottom:24px;">Quel type de site recherchez-vous ?</h3>
+
+              <div class="form-group">
+                <label>Type de projet</label>
+                <div class="radio-group">
+                  <div class="radio-option">
+                    <input type="radio" name="projectType" id="typeVitrine" value="Site Vitrine" checked>
+                    <label for="typeVitrine">
+                      <span class="radio-icon">&#127760;</span>
+                      <div class="radio-text">
+                        <strong>Site Vitrine</strong>
+                        <span>Présenter votre activité</span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" name="projectType" id="typeEcommerce" value="E-commerce">
+                    <label for="typeEcommerce">
+                      <span class="radio-icon">&#128722;</span>
+                      <div class="radio-text">
+                        <strong>E-commerce</strong>
+                        <span>Vendre en ligne</span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" name="projectType" id="typeLanding" value="Landing Page">
+                    <label for="typeLanding">
+                      <span class="radio-icon">&#127775;</span>
+                      <div class="radio-text">
+                        <strong>Landing Page</strong>
+                        <span>Convertir vos visiteurs</span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" name="projectType" id="typeRefonte" value="Refonte">
+                    <label for="typeRefonte">
+                      <span class="radio-icon">&#128736;</span>
+                      <div class="radio-text">
+                        <strong>Refonte</strong>
+                        <span>Moderniser l'existant</span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-nav">
+                <div></div>
+                <button type="button" class="btn btn-primary btn-next" data-next="2">Suivant &#8594;</button>
+              </div>
+            </div>
+
+            <!-- Étape 2 : Détails du projet -->
+            <div class="form-step" data-step="2">
+              <h3 style="margin-bottom:24px;">Parlez-moi de votre projet</h3>
+
+              <div class="form-group">
+                <label for="budget">Budget estimé</label>
+                <select id="budget" name="budget">
+                  <option value="">Sélectionnez votre budget</option>
+                  <option value="< 500€">Moins de 500&euro;</option>
+                  <option value="500€ - 1000€">500&euro; - 1 000&euro;</option>
+                  <option value="1000€ - 2000€">1 000&euro; - 2 000&euro;</option>
+                  <option value="2000€ - 5000€">2 000&euro; - 5 000&euro;</option>
+                  <option value="> 5000€">Plus de 5 000&euro;</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="deadline">Délai souhaité</label>
+                <select id="deadline" name="deadline">
+                  <option value="">Sélectionnez un délai</option>
+                  <option value="< 1 semaine">Moins d'1 semaine</option>
+                  <option value="1 - 2 semaines">1 à 2 semaines</option>
+                  <option value="2 - 4 semaines">2 à 4 semaines</option>
+                  <option value="1 - 2 mois">1 à 2 mois</option>
+                  <option value="Pas de deadline">Pas de deadline précise</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="description">Décrivez votre projet</label>
+                <textarea id="description" name="description" placeholder="Décrivez brièvement votre projet, vos objectifs et vos attentes..."></textarea>
+              </div>
+
+              <div class="form-nav">
+                <button type="button" class="btn btn-outline btn-prev" data-prev="1">&#8592; Retour</button>
+                <button type="button" class="btn btn-primary btn-next" data-next="3">Suivant &#8594;</button>
+              </div>
+            </div>
+
+            <!-- Étape 3 : Informations personnelles -->
+            <div class="form-step" data-step="3">
+              <h3 style="margin-bottom:24px;">Vos coordonnées</h3>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">Prénom</label>
+                  <input type="text" id="firstName" name="firstName" placeholder="Votre prénom" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Nom</label>
+                  <input type="text" id="lastName" name="lastName" placeholder="Votre nom" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Téléphone (optionnel)</label>
+                <input type="tel" id="phone" name="phone" placeholder="+33 6 00 00 00 00">
+              </div>
+
+              <div class="form-group">
+                <label for="company">Entreprise (optionnel)</label>
+                <input type="text" id="company" name="company" placeholder="Nom de votre entreprise">
+              </div>
+
+              <div class="form-nav">
+                <button type="button" class="btn btn-outline btn-prev" data-prev="2">&#8592; Retour</button>
+                <button type="submit" class="btn btn-primary">Envoyer ma demande &#8594;</button>
+              </div>
+            </div>
+
+          </form>
+
+          <!-- Message de succès -->
+          <div class="success-message" id="successMessage">
+            <div class="success-icon">&#9989;</div>
+            <h3>Demande envoyée avec succès !</h3>
+            <p>Merci pour votre demande. Je vous recontacte sous 24h avec une proposition personnalisée.</p>
+            <a href="index.html" class="btn btn-outline" style="margin-top:24px;">Retour à l'accueil</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo">RK<span>-Service</span></a>
+          <p>Création de sites web professionnels sur mesure. Design, développement et référencement pour booster votre activité en ligne.</p>
+          <div class="contact-socials">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="GitHub">GH</a>
+            <a href="#" aria-label="Instagram">IG</a>
+          </div>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Exemples</a></li>
+            <li><a href="about.html">&#192; propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Sites par secteur</h4>
+          <ul class="footer-links">
+            <li><a href="portfolio.html">Immobilier</a></li>
+            <li><a href="portfolio.html">Avocats</a></li>
+            <li><a href="portfolio.html">B&#226;timent & BTP</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>contact@rk-service.fr</li>
+            <li>+33 6 00 00 00 00</li>
+            <li>Paris, France</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 RK-Service. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
