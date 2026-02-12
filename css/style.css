@@ -1184,6 +1184,11 @@ section {
   border-color: var(--primary);
 }
 
+.field-error {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 3px rgba(212, 43, 43, 0.2);
+}
+
 .form-group textarea {
   resize: vertical;
   min-height: 120px;

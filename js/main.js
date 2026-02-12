@@ -32,6 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.classList.remove('open');
       });
     });
+
+    // Close menu with ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+        menuToggle.classList.remove('active');
+        navLinks.classList.remove('open');
+      }
+    });
   }
 
   // --- Scroll animations (fade-up) ---
@@ -82,11 +90,34 @@ document.addEventListener('DOMContentLoaded', () => {
       currentStep = stepNumber;
     }
 
+    // Validate current step fields
+    function validateStep(stepNumber) {
+      const currentStepEl = devisForm.querySelector(`.form-step[data-step="${stepNumber}"]`);
+      const requiredFields = currentStepEl.querySelectorAll('[required]');
+      let valid = true;
+
+      requiredFields.forEach(field => {
+        field.classList.remove('field-error');
+        if (!field.value.trim()) {
+          field.classList.add('field-error');
+          valid = false;
+        }
+        if (field.type === 'email' && field.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value)) {
+          field.classList.add('field-error');
+          valid = false;
+        }
+      });
+
+      return valid;
+    }
+
     // Next buttons
     devisForm.querySelectorAll('.btn-next').forEach(btn => {
       btn.addEventListener('click', () => {
         const nextStep = parseInt(btn.dataset.next);
-        goToStep(nextStep);
+        if (validateStep(currentStep)) {
+          goToStep(nextStep);
+        }
       });
     });
 
@@ -98,9 +129,18 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
+    // Clear error on input
+    devisForm.querySelectorAll('input, select, textarea').forEach(field => {
+      field.addEventListener('input', () => {
+        field.classList.remove('field-error');
+      });
+    });
+
     // Form submission via Web3Forms
     devisForm.addEventListener('submit', (e) => {
       e.preventDefault();
+
+      if (!validateStep(currentStep)) return;
 
       const submitBtn = devisForm.querySelector('button[type="submit"]');
       const originalText = submitBtn.innerHTML;
