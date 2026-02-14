@@ -191,6 +191,7 @@ h3 { font-size: 1.3rem; font-weight: 600; }
   height: 40px;
   width: auto;
   display: block;
+  border-radius: 50%;
 }
 
 .logo span {
@@ -1113,16 +1114,25 @@ section {
   font-size: 0.9rem;
   color: var(--gray);
   transition: all var(--transition);
+  overflow: hidden;
+  outline: none;
+}
+
+.step-indicator:focus .step-number,
+.step-indicator:focus-within .step-number {
+  box-shadow: 0 0 0 3px rgba(212, 43, 43, 0.3);
 }
 
 .step-indicator.active .step-number {
   background: var(--gradient);
+  background-clip: padding-box;
   border-color: transparent;
   color: #fff;
 }
 
 .step-indicator.completed .step-number {
   background: var(--secondary);
+  background-clip: padding-box;
   border-color: transparent;
   color: #fff;
 }
