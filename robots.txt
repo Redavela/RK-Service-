@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /.claude/
 
-Sitemap: https://rk-service.vercel.app/sitemap.xml
+Sitemap: https://rkservice.fr/sitemap.xml
