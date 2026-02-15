@@ -305,15 +305,15 @@ h3 { font-size: 1.3rem; font-weight: 600; }
   gap: 16px;
   z-index: 10001;
   opacity: 0;
-  transform: scale(0.7);
-  animation: splashLogoIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+  transform: scale(0.5);
+  animation: splashLogoIn 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
 }
 
 .splash-logo {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  animation: splashGlow 1.5s ease-in-out 0.8s infinite alternate;
+  animation: splashHeartbeat 1s cubic-bezier(0.4, 0, 0.2, 1) 2s infinite, splashGlow 1.5s ease-in-out 1.5s infinite alternate;
 }
 
 .splash-text {
@@ -337,7 +337,7 @@ h3 { font-size: 1.3rem; font-weight: 600; }
   letter-spacing: 4px;
   text-transform: uppercase;
   opacity: 0;
-  animation: splashTaglineIn 0.6s ease 1.2s forwards;
+  animation: splashTaglineIn 0.8s ease 2.2s forwards;
 }
 
 .splash-curtain-left,
@@ -371,7 +371,17 @@ h3 { font-size: 1.3rem; font-weight: 600; }
 }
 
 @keyframes splashLogoIn {
-  to { opacity: 1; transform: scale(1); }
+  0%   { opacity: 0; transform: scale(0.5); }
+  60%  { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes splashHeartbeat {
+  0%   { transform: scale(1); }
+  15%  { transform: scale(1.15); }
+  30%  { transform: scale(1); }
+  45%  { transform: scale(1.1); }
+  60%  { transform: scale(1); }
 }
 
 @keyframes splashGlow {

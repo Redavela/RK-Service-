@@ -183,13 +183,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
       splash.classList.add('exit');
-    }, 2800);
+    }, 4200);
 
     setTimeout(() => {
       document.body.style.overflow = '';
       document.body.classList.add('revealed');
       splash.classList.add('done');
-    }, 4000);
+    }, 5400);
   }
 
   // --- Smooth scroll for anchor links ---
