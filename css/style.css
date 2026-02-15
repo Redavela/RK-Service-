@@ -398,13 +398,13 @@ h3 { font-size: 1.3rem; font-weight: 600; }
   to { transform: translateX(100%); }
 }
 
-/* --- Hero Entrance (post-splash) --- */
-.hero-content .hero-badge,
-.hero-content h1,
-.hero-content > p,
-.hero-content .hero-buttons,
-.hero-content .hero-stats,
-.hero-visual {
+/* --- Hero Entrance (post-splash, index only) --- */
+body.has-splash .hero-content .hero-badge,
+body.has-splash .hero-content h1,
+body.has-splash .hero-content > p,
+body.has-splash .hero-content .hero-buttons,
+body.has-splash .hero-content .hero-stats,
+body.has-splash .hero-visual {
   opacity: 0;
   transform: translateY(30px);
 }
