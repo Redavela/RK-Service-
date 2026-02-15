@@ -1,5 +1,5 @@
 /* ===========================
-   RK-Service — Main JavaScript
+   RKService — Main JavaScript
    =========================== */
 
 document.addEventListener('DOMContentLoaded', () => {
