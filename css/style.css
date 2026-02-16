@@ -690,6 +690,38 @@ section {
   font-size: 0.9rem;
 }
 
+.service-features {
+  margin-top: 16px;
+  text-align: left;
+}
+
+.service-features li {
+  padding: 4px 0;
+  color: var(--gray);
+  font-size: 0.88rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.service-features li::before {
+  content: '\2713';
+  color: var(--secondary);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.service-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: var(--primary);
+}
+
 /* --- Exemples par secteur --- */
 .example-block {
   background: var(--dark-card);
@@ -1009,10 +1041,31 @@ section {
   background: var(--dark-card);
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: var(--radius);
-  padding: 32px;
   transition: all var(--transition);
   position: relative;
   overflow: hidden;
+  text-align: center;
+}
+
+.engagement-card-img {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.engagement-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.engagement-card:hover .engagement-card-img img {
+  transform: scale(1.08);
+}
+
+.engagement-card-body {
+  padding: 24px;
 }
 
 .engagement-card::before {
