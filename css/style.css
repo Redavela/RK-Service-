@@ -14,17 +14,17 @@
 :root {
   --primary: #D42B2B;
   --primary-dark: #B71C1C;
-  --primary-light: #EF5350;
-  --secondary: #7EC8E3;
-  --dark: #0a0a1a;
-  --dark-light: #141428;
-  --dark-card: #1a1a2e;
-  --gray: #8892b0;
-  --gray-light: #ccd6f6;
-  --white: #e6f1ff;
+  --primary-light: #C62828;
+  --secondary: #2E86AB;
+  --dark: #ffffff;
+  --dark-light: #f5f5f7;
+  --dark-card: #ffffff;
+  --gray: #5f6368;
+  --gray-light: #333333;
+  --white: #1a1a2e;
   --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
-  --shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-  --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.2);
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.06);
   --radius: 12px;
   --radius-sm: 8px;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -166,10 +166,10 @@ h3 { font-size: 1.3rem; font-weight: 600; }
 }
 
 .navbar.scrolled {
-  background: rgba(10, 10, 26, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
   padding: 12px 0;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
 }
 
 .navbar .container {
@@ -243,6 +243,10 @@ h3 { font-size: 1.3rem; font-weight: 600; }
   font-weight: 600;
 }
 
+.nav-cta:hover {
+  color: #fff !important;
+}
+
 .nav-cta::after {
   display: none !important;
 }
@@ -267,7 +271,7 @@ h3 { font-size: 1.3rem; font-weight: 600; }
 .menu-toggle span {
   width: 28px;
   height: 3px;
-  background: var(--white);
+  background: var(--gray-light);
   border-radius: 2px;
   transition: all var(--transition);
 }
@@ -295,7 +299,7 @@ h3 { font-size: 1.3rem; font-weight: 600; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--dark);
+  background: #ffffff;
 }
 
 .splash-content {
@@ -320,7 +324,7 @@ h3 { font-size: 1.3rem; font-weight: 600; }
   font-family: var(--font);
   font-size: 3rem;
   font-weight: 800;
-  color: var(--white);
+  color: #1a1a2e;
   letter-spacing: 2px;
 }
 
@@ -346,7 +350,7 @@ h3 { font-size: 1.3rem; font-weight: 600; }
   top: 0;
   width: 50%;
   height: 100%;
-  background: var(--dark);
+  background: #ffffff;
   z-index: 10000;
 }
 
@@ -448,7 +452,7 @@ body.revealed .hero-visual {
   right: -20%;
   width: 700px;
   height: 700px;
-  background: radial-gradient(circle, rgba(212, 43, 43, 0.15), transparent 70%);
+  background: radial-gradient(circle, rgba(212, 43, 43, 0.08), transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -460,7 +464,7 @@ body.revealed .hero-visual {
   left: -10%;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(126, 200, 227, 0.15), transparent 70%);
+  background: radial-gradient(circle, rgba(46, 134, 171, 0.08), transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -512,7 +516,7 @@ body.revealed .hero-visual {
   gap: 40px;
   margin-top: 48px;
   padding-top: 32px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .hero-stats .stat h3 {
@@ -543,7 +547,7 @@ body.revealed .hero-visual {
   aspect-ratio: 1;
   background: var(--dark-card);
   border-radius: var(--radius);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -556,7 +560,7 @@ body.revealed .hero-visual {
   position: absolute;
   inset: 0;
   background: var(--gradient);
-  opacity: 0.05;
+  opacity: 0.03;
 }
 
 .code-block {
@@ -611,7 +615,7 @@ section {
 
 .service-card {
   background: var(--dark-card);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: var(--radius);
   padding: 36px;
   transition: all var(--transition);
@@ -665,7 +669,7 @@ section {
 /* --- Exemples par secteur --- */
 .example-block {
   background: var(--dark-card);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: var(--radius);
   padding: 48px;
   transition: all var(--transition);
@@ -752,11 +756,11 @@ section {
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .mockup-bar {
-  background: #1e1e2e;
+  background: #f0f0f0;
   padding: 12px 16px;
   display: flex;
   align-items: center;
@@ -778,7 +782,7 @@ section {
   margin-left: 12px;
   font-size: 0.75rem;
   color: var(--gray);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.08);
   padding: 4px 12px;
   border-radius: 4px;
   flex: 1;
@@ -878,7 +882,7 @@ section {
 
 .pricing-card {
   background: var(--dark-card);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: var(--radius);
   padding: 40px;
   text-align: center;
@@ -940,7 +944,7 @@ section {
   font-size: 0.9rem;
   margin-bottom: 28px;
   padding-bottom: 28px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .pricing-features {
@@ -979,7 +983,7 @@ section {
 
 .engagement-card {
   background: var(--dark-card);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: var(--radius);
   padding: 32px;
   transition: all var(--transition);
@@ -1031,7 +1035,7 @@ section {
   gap: 48px;
   align-items: center;
   background: var(--dark-card);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: var(--radius);
   padding: 48px;
 }
@@ -1069,7 +1073,7 @@ section {
 
 .about-value-card {
   background: var(--dark-card);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: var(--radius);
   padding: 32px;
   transition: all var(--transition);
@@ -1105,7 +1109,7 @@ section {
 
 .tech-item {
   background: var(--dark-card);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: var(--radius);
   padding: 20px 32px;
   text-align: center;
@@ -1142,7 +1146,7 @@ section {
 .contact-info {
   padding: 40px;
   background: var(--dark-card);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: var(--radius);
 }
 
@@ -1200,7 +1204,7 @@ section {
 .contact-socials a {
   width: 40px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.08);
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
@@ -1217,7 +1221,7 @@ section {
 /* Multi-step form */
 .form-card {
   background: var(--dark-card);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: var(--radius);
   padding: 40px;
 }
@@ -1236,7 +1240,7 @@ section {
   left: 40px;
   right: 40px;
   height: 2px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.08);
 }
 
 .step-indicator {
@@ -1252,8 +1256,8 @@ section {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--dark);
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: var(--dark-light);
+  border: 2px solid rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1325,8 +1329,8 @@ section {
 .form-group textarea {
   width: 100%;
   padding: 14px 18px;
-  background: var(--dark);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--dark-light);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: var(--radius-sm);
   color: var(--white);
   font-family: var(--font);
@@ -1352,7 +1356,7 @@ section {
 }
 
 .form-group select option {
-  background: var(--dark);
+  background: var(--dark-light);
 }
 
 .form-row {
@@ -1383,8 +1387,8 @@ section {
   align-items: center;
   gap: 12px;
   padding: 16px;
-  background: var(--dark);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--dark-light);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: var(--radius-sm);
   cursor: pointer;
   transition: all var(--transition);
@@ -1453,7 +1457,7 @@ section {
 /* --- Footer --- */
 .footer {
   background: var(--dark-light);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
   padding: 60px 0 24px;
 }
 
@@ -1497,7 +1501,7 @@ section {
 
 .footer-bottom {
   padding-top: 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
   text-align: center;
   color: var(--gray);
   font-size: 0.85rem;
@@ -1620,12 +1624,12 @@ section {
     right: -100%;
     width: 75%;
     height: 100vh;
-    background: var(--dark-light);
+    background: var(--dark);
     flex-direction: column;
     justify-content: center;
     gap: 24px;
     transition: right var(--transition);
-    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
   }
 
   .nav-links.open {
