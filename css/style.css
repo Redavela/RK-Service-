@@ -344,27 +344,15 @@ h3 { font-size: 1.3rem; font-weight: 600; }
 
 .splash-curtain-left,
 .splash-curtain-right {
-  position: absolute;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  background: #0a0a14;
-  z-index: 10000;
+  display: none;
 }
-
-.splash-curtain-left { left: 0; }
-.splash-curtain-right { right: 0; }
 
 .splash.exit .splash-content {
   animation: splashLogoOut 0.5s cubic-bezier(0.4, 0, 1, 1) forwards;
 }
 
-.splash.exit .splash-curtain-left {
-  animation: curtainLeft 0.8s cubic-bezier(0.76, 0, 0.24, 1) 0.4s forwards;
-}
-
-.splash.exit .splash-curtain-right {
-  animation: curtainRight 0.8s cubic-bezier(0.76, 0, 0.24, 1) 0.4s forwards;
+.splash.exit {
+  animation: splashFadeOut 1.2s ease 0.4s forwards;
 }
 
 .splash.done {
@@ -392,12 +380,10 @@ h3 { font-size: 1.3rem; font-weight: 600; }
   to { opacity: 0; transform: scale(1.3); }
 }
 
-@keyframes curtainLeft {
-  to { transform: translateX(-100%); }
-}
-
-@keyframes curtainRight {
-  to { transform: translateX(100%); }
+@keyframes splashFadeOut {
+  0%   { background: #0a0a14; opacity: 1; }
+  50%  { background: #ffffff; opacity: 1; }
+  100% { background: #ffffff; opacity: 0; }
 }
 
 /* --- Hero Entrance (post-splash, index only) --- */

@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.style.overflow = '';
       document.body.classList.add('revealed');
       splash.classList.add('done');
-    }, 5400);
+    }, 5800);
   }
 
   // --- Hero Slider ---
