@@ -175,22 +175,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- Splash Screen ---
-  const splash = document.getElementById('splash');
-  if (splash) {
-    // Prevent scroll during splash
-    document.body.style.overflow = 'hidden';
-
-    setTimeout(() => {
-      splash.classList.add('exit');
-    }, 4200);
-
-    setTimeout(() => {
-      document.body.style.overflow = '';
-      document.body.classList.add('revealed');
-      splash.classList.add('done');
-    }, 5800);
-  }
 
   // --- Hero Slider ---
   const slides = document.querySelectorAll('.hero-slide');
