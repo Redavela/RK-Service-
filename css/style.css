@@ -1428,6 +1428,8 @@ section {
 
 .footer-links li {
   margin-bottom: 10px;
+  color: var(--gray);
+  font-size: 0.9rem;
 }
 
 .footer-links a {
