@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl:*)",
+      "Bash(git --version:*)",
+      "Bash(gh auth:*)",
+      "Bash(git push:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(python:*)",
+      "Bash(py:*)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(node -e:*)",
+      "Bash(magick:*)",
+      "Bash(convert:*)",
+      "Bash(node:*)",
+      "Bash(npm i:*)",
+      "Bash(vercel:*)",
+      "WebFetch(domain:rk-service.vercel.app)",
+      "Bash(git checkout:*)",
+      "Bash(git revert:*)",
+      "Bash(git merge:*)",
+      "WebFetch(domain:rkservice.fr)",
+      "WebSearch",
+      "Bash(ls:*)",
+      "Bash(git mv:*)",
+      "Bash(git rm:*)",
+      "Bash(echo:*)"
+    ]
+  }
+}
